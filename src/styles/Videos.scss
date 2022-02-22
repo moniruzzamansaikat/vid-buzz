@@ -6,6 +6,11 @@
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   cursor: pointer;
 
+  // for side bar options
+  &.options {
+    margin: 0;
+  }
+
   .video_card {
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;

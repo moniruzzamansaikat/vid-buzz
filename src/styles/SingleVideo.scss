@@ -5,7 +5,13 @@
   grid-template-columns: 65% 33%;
   grid-gap: 1rem;
 
+  // media
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+
   .video {
+    align-self: flex-start;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
       rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 
@@ -20,9 +26,26 @@
 
         display: flex;
         justify-content: space-between;
-       }
 
-    
+        .handlers {
+          font-size: 14px;
+
+          p {
+            display: flex;
+            align-items: center;
+
+            #icon {
+              font-size: 1rem;
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+
+      // description
+      .desc {
+        margin-top: 1rem;
+      }
     }
   }
 }

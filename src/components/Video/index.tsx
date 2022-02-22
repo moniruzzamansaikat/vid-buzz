@@ -9,7 +9,7 @@ function Video({ video }: any) {
   };
 
   return (
-    <div className="video_card" onClick={() => goToSingleVideo(video.video_id)}>
+    <div className="video_card" onClick={() => goToSingleVideo(video.objectID)}>
       <img src={video.thumbnail} alt="" />
       <div className="content">
         <p>{video.title}</p>
